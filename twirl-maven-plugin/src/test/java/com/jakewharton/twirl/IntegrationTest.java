@@ -36,7 +36,7 @@ public final class IntegrationTest {
     String fooBarBaz = Files.toString(fooBarBazTemplate, UTF_8);
     assertThat(fooBarBaz).contains("import java.util._")
         .contains("import java.lang._")
-        .contains("import scala.collection.JavaConversions._")
+        .contains("import scala.jdk.CollectionConverters._")
         .contains("import scala.collection.JavaConverters._");
   }
 
@@ -50,7 +50,7 @@ public final class IntegrationTest {
     String fooBarBaz = Files.toString(fooBarBazTemplate, UTF_8);
     assertThat(fooBarBaz).doesNotContain("import java.util._")
         .doesNotContain("import java.lang._")
-        .doesNotContain("import scala.collection.JavaConversions._")
+        .doesNotContain("import scala.jdk.CollectionConverters._")
         .doesNotContain("import scala.collection.JavaConverters._");
   }
 

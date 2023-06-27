@@ -45,8 +45,8 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <java.version>1.8</java.version>
-    <scala.major.version>2.12</scala.major.version>
-    <twirl.version>1.4.1</twirl.version>
+    <scala.major.version>2.13</scala.major.version>
+    <twirl.version>1.5.2</twirl.version>
   </properties>
 
   <dependencyManagement>
@@ -60,6 +60,12 @@
         <groupId>com.typesafe.play</groupId>
         <artifactId>twirl-api_${scala.major.version}</artifactId>
         <version>${twirl.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.maven</groupId>
@@ -101,15 +107,15 @@
         <artifactId>maven-artifact</artifactId>
         <version>3.6.3</version>
       </dependency>
-      <dependency>
+<!--      <dependency>
         <groupId>org.scala-lang.modules</groupId>
         <artifactId>scala-xml_${scala.major.version}</artifactId>
-        <version>1.2.0</version>
-      </dependency>
+        <version>2.1.0</version>
+      </dependency>-->
       <dependency>
         <groupId>org.scala-lang.modules</groupId>
         <artifactId>scala-parser-combinators_${scala.major.version}</artifactId>
-        <version>1.1.2</version>
+        <version>2.3.0</version>
       </dependency>
       <dependency>
         <groupId>org.codehaus.plexus</groupId>
