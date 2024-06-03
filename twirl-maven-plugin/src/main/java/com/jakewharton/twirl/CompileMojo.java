@@ -18,10 +18,11 @@ import org.apache.maven.plugins.annotations.Parameter;
 import org.apache.maven.project.MavenProject;
 import org.codehaus.plexus.util.DirectoryScanner;
 import play.japi.twirl.compiler.TwirlCompiler;
+
 import play.twirl.api.HtmlFormat;
-import play.twirl.api.JavaScriptFormat;
 import play.twirl.api.TxtFormat;
 import play.twirl.api.XmlFormat;
+import play.twirl.api.JavaScriptFormat;
 import scala.io.Codec;
 
 import static com.google.common.collect.Collections2.transform;

@@ -11,7 +11,7 @@
   <build>
     <plugins>
       <plugin>
-        <groupId>com.jakewharton.twirl</groupId>
+        <groupId>de.eitco.cicd</groupId>
         <artifactId>twirl-maven-plugin</artifactId>
         <configuration>
           <useJavaHelpers>false</useJavaHelpers>

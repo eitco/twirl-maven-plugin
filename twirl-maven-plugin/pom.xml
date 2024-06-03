@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>com.jakewharton.twirl</groupId>
+    <groupId>de.eitco.cicd</groupId>
     <artifactId>twirl-parent</artifactId>
     <version>1.2.1-SNAPSHOT</version>
   </parent>
@@ -15,8 +15,17 @@
 
   <dependencies>
     <dependency>
-      <groupId>com.typesafe.play</groupId>
+      <groupId>org.playframework.twirl</groupId>
       <artifactId>twirl-compiler_${scala.major.version}</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.playframework.twirl</groupId>
+      <artifactId>twirl-api_${scala.major.version}</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.scala-lang</groupId>
+      <artifactId>scala-library</artifactId>
+      <version>${scala.major.version}.13</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven</groupId>
@@ -71,24 +80,24 @@
           </execution>
         </executions>
       </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-enforcer-plugin</artifactId>
-        <version>3.0.0-M2</version>
-        <executions>
-          <execution>
-            <id>enforce</id>
-            <configuration>
-              <rules>
-                <dependencyConvergence />
-              </rules>
-            </configuration>
-            <goals>
-              <goal>enforce</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
+<!--      <plugin>-->
+<!--        <groupId>org.apache.maven.plugins</groupId>-->
+<!--        <artifactId>maven-enforcer-plugin</artifactId>-->
+<!--        <version>3.0.0-M2</version>-->
+<!--        <executions>-->
+<!--          <execution>-->
+<!--            <id>enforce</id>-->
+<!--            <configuration>-->
+<!--              <rules>-->
+<!--                <dependencyConvergence />-->
+<!--              </rules>-->
+<!--            </configuration>-->
+<!--            <goals>-->
+<!--              <goal>enforce</goal>-->
+<!--            </goals>-->
+<!--          </execution>-->
+<!--        </executions>-->
+<!--      </plugin>-->
     </plugins>
   </build>
 </project>

@@ -1,3 +1,7 @@
+[![License](https://img.shields.io/github/license/eitco/twirl-maven-plugin.svg?style=for-the-badge)](https://opensource.org/license/apache-2-0)
+[![Build status](https://img.shields.io/github/actions/workflow/status/eitco/twirl-maven-plugin/deploy.yaml?branch=main&style=for-the-badge&logo=github)](https://github.com/eitco/twirl-maven-plugin/actions/workflows/deploy.yaml)
+[![Maven Central Version](https://img.shields.io/maven-central/v/de.eitco.cicd/twirl-maven-plugin?style=for-the-badge&logo=apachemaven)](https://central.sonatype.com/artifact/de.eitco.cicd/twirl-maven-plugin)
+
 Twirl Maven Plugin
 ==================
 
@@ -27,7 +31,7 @@ Add the plugin in your `pom.xml`:
 
 ```xml
 <plugin>
-  <groupId>com.jakewharton.twirl</groupId>
+  <groupId>de.eitco.cicd</groupId>
   <artifactId>twirl-maven-plugin</artifactId>
   <version>1.2.0</version>
   <executions>
@@ -45,9 +49,9 @@ and specify a dependency on the Twirl API:
 
 ```xml
 <dependency>
-  <groupId>com.typesafe.play</groupId>
-  <artifactId>twirl-api_2.12</artifactId>
-  <version>1.4.1</version>
+  <groupId>org.playframework.twirl</groupId>
+  <artifactId>twirl-api_2.13</artifactId>
+  <version>2.0.5</version>
 </dependency>
 ```
 

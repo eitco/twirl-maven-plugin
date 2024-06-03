@@ -24,3 +24,5 @@ release.properties
 classes
 
 .DS_Store
+/twirl-maven-plugin/.git-versioned-pom.xml
+/.git-versioned-pom.xml
