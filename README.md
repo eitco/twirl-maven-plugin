@@ -7,6 +7,8 @@ Twirl Maven Plugin
 
 A Maven plugin which compiles [Twirl templates][1] into Scala source files.
 
+This fork of the original plugin is compatible with Scala 2.13 and uses Twirl version 2.0.5.
+
 Twirl lets you write type-safe, compiled templates in Scala:
 ```scala
 // Hello.scala.html
@@ -33,7 +35,7 @@ Add the plugin in your `pom.xml`:
 <plugin>
   <groupId>de.eitco.cicd</groupId>
   <artifactId>twirl-maven-plugin</artifactId>
-  <version>1.2.0</version>
+  <version>1.3.0</version>
   <executions>
     <execution>
       <phase>generate-sources</phase>
