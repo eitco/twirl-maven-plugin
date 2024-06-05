@@ -23,16 +23,11 @@
   </modules>
 
   <scm>
-    <url>https://github.com/JakeWharton/twirl-maven-plugin</url>
-    <connection>scm:git:git://github.com/JakeWharton/twirl-maven-plugin.git</connection>
-    <developerConnection>scm:git:git@github.com:JakeWharton/twirl-maven-plugin.git
+    <url>https://github.com/eitco/twirl-maven-plugin</url>
+    <connection>scm:git:git://github.com/eitco/twirl-maven-plugin.git</connection>
+    <developerConnection>scm:git:git@github.com:eitco/twirl-maven-plugin.git
     </developerConnection>
   </scm>
-
-  <issueManagement>
-    <system>GitHub Issues</system>
-    <url>https://github.com/JakeWharton/twirl-maven-plugin/issues</url>
-  </issueManagement>
 
   <licenses>
     <license>
